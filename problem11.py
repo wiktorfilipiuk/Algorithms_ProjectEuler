@@ -66,4 +66,4 @@ def findMaxGrid():
     myList = [myListDiag, myListDiag2, myListUpDown, myListLeftRight, myListDownUp, myListRightLeft]
     return (max(myList[0]),max(myList[1]),max(myList[2]),max(myList[3]),max(myList[4]),max(myList[5]))
 
-print(findMaxGrid())
+print(max(findMaxGrid()))

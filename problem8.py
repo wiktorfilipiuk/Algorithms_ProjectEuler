@@ -38,7 +38,7 @@ def prod(numberString):
     output = 1
     for element in numberString:
         output = output * int(element)
-    return output
+    return(output)
 
 def findDigits(n):
     num = 0
@@ -47,6 +47,6 @@ def findDigits(n):
         newNum = prod(NUMBER[i:i+n])
         if(newNum >= num):
             num = newNum
-    return num
+    return(num)
 
-print findDigits(13)
+print(findDigits(13))

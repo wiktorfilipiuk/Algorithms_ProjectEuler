@@ -14,6 +14,8 @@ Find the sum of all the primes below two million.
 def findPrimes(x):
     myList = []
     for i in range(2,x):
+        if i%20000 == 0:
+            print("Progress: {}%".format(i/20000))
         isPrime = True
         counter = 0
         while isPrime == True and counter != len(myList):
@@ -22,7 +24,6 @@ def findPrimes(x):
             counter = counter + 1
         if isPrime == True:
             myList.append(i)
-    return sum(myList)
+    return(sum(myList))
 
-
-print findPrimes(2000000)
+print(findPrimes(2000000))

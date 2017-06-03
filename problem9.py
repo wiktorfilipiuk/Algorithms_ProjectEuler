@@ -13,6 +13,9 @@ Find the product abc.
 
 """
 
+from operator import mul
+from functools import reduce
+
 def findTriplet():
     a = 1
     b = 1
@@ -26,6 +29,6 @@ def findTriplet():
             if(((a**2) + (b**2))  == (c**2)):
                 myList.append([a,b,c])
     return myList
-            
 
-print findTriplet()
+triplet = findTriplet()
+print("Found triplets: {0}\nTriplets product 1: {1}\nTriplets product 2: {2}".format(triplet, reduce(mul, triplet[0], 1), reduce(mul, triplet[1], 1)))

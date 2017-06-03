@@ -27,6 +27,6 @@ def primes(x):
 
         i = i+1
 
-    return myList
+    return(myList)
 
-print primes(10001)
+print(primes(10001))

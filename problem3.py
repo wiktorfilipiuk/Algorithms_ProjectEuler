@@ -6,6 +6,7 @@
 The prime factors of 13195 are 5, 7, 13 and 29.
 
 What is the largest prime factor of the number 600851475143 ?
+
 """
 
 def findDivisors(x):
@@ -19,15 +20,10 @@ def findDivisors(x):
             result.append(tmp)
         else:
             n = n + 1
-    return result
-
+    return(result)
 
 def findMaxPrime(x):
     myList = findDivisors(x)
-    return [element for element in myList if len(findDivisors(element)) == 2]
+    return([element for element in myList if len(findDivisors(element)) == 2])
 
-a =  findMaxPrime(600851475143)
-                      
-
-
-
+print(findMaxPrime(600851475143))
