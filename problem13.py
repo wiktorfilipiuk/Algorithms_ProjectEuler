@@ -21,19 +21,6 @@ f = open("50_digits_numbers.txt", "r")
 input = f.read()
 
 numbers = input.split("\n")
-#
-#numbers_1 = sum([int(x[-1]) for x in numbers])
-#numbers_2 = sum([int(x[-2]) for x in numbers])
-#numbers_3 = sum([int(x[-3]) for x in numbers])
-#numbers_4 = sum([int(x[-4]) for x in numbers])
-#numbers_5 = sum([int(x[-5]) for x in numbers])
-#numbers_6 = sum([int(x[-6]) for x in numbers])
-#numbers_7 = sum([int(x[-7]) for x in numbers])
-#numbers_8 = sum([int(x[-8]) for x in numbers])
-##
-##numbers_1_8 = [int(x[-8:]) for x in numbers]
-##sum(numbers_1_8 ) # == 493_1892672
-
 collected_digits = []
 step = 0
 
